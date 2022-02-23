@@ -1,6 +1,6 @@
 {
   "name": "flashesp32",
-  "version": "6",
+  "version": "7",
   "slug": "flashesp32",
   "description": "Flash esp32",
   "url":"https://github.com/StavroX/hassio-flashesp32",
