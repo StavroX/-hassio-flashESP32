@@ -1,0 +1,19 @@
+{
+  "name": "flashESP32",
+  "version": "1",
+  "slug": "flashESP32",
+  "description": "Flash ESP32",
+  "url":"https://github.com/StavroX/hassio-flashESP32",
+  "arch": ["armhf", "armv7", "aarch64"],
+  "startup": "once",
+  "boot": "manual",
+  "options": {},
+  "map": ["backup:rw"],
+  "devices": ["/dev/mem:rw", "/dev/ttyUSB0:rw"],
+  "privileged": ["SYS_RAWIO"],
+  "gpio": "true",
+  "apparmor": "true",
+  "ports": {
+  },
+  "schema": {}
+}
