@@ -10,7 +10,7 @@ if ! wget https://github.com/Aircoookie/WLED/releases/download/v0.13.0-b6/WLED_0
 
 echo "Do button magic to make PI recognize esp32. You Have 5 seconds.."
 sleep 5
-./esptool.py get_security_info
+python3 ./esptool.py get_security_info
 
 
 # if ! ./cc_chipid | grep "ID = b524"; then echo "ChipID not found." && exit 1; fi

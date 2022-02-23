@@ -4,7 +4,9 @@ FROM $BUILD_FROM
 ENV LANG C.UTF-8
 
 # Install requirements for add-on
-RUN apk add --no-cache git python3-pip grep wget p7zip && ln -sf python3 /usr/bin/python
+RUN apt-get update &&\
+    apt-get install -y \
+    python3-pip git grep wget
 
 RUN python3 -m pip install esptool
 
