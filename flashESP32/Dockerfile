@@ -4,7 +4,7 @@ FROM $BUILD_FROM
 ENV LANG C.UTF-8
 
 # Install requirements for add-on
-RUN apk add --no-cache git make g++ python3 grep wget p7zip
+RUN apk add --no-cache git python grep wget
 
 RUN git clone https://github.com/espressif/esptool.git && \
               cd esptool
